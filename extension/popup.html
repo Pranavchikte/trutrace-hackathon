@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruTrace Popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-box">
+                <span class="emoji">🇮🇳</span>
+            </div>
+            <div class="brand">
+                <h1>TruTrace</h1>
+                <p>AI Detection & Verification</p>
+            </div>
+        </header>
+
+        <div class="button-group">
+            <button id="scanImages" class="btn btn-red">
+                📸 Scan Images on Page
+            </button>
+            <button id="scanText" class="btn btn-blue">
+                📝 Scan Selected Text
+            </button>
+        </div>
+
+        <div id="results" class="hidden">
+            <div class="card">
+                <h3 class="card-title">
+                    <span class="status-dot"></span>
+                    Scan Results
+                </h3>
+                <div id="resultsContent"></div>
+            </div>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="card loading-card">
+                <div class="spinner"></div>
+                <p>Scanning content...</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Powered by Bharat Mark Compliance</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
